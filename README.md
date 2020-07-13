@@ -98,8 +98,6 @@ Then the content should be unique and reflect the skills and personality of the 
     - How long you spent working on this assignment
 
 
-
-
 # Art and Credit Attribution
 
 CSS3 Patterns Gallery for the diagonal pattern at https://leaverou.github.io/css3patterns
