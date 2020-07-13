@@ -1,5 +1,9 @@
 /* Container */
 
+.ally{
+	text-align: right;
+}
+
 .container {
   margin: 0 auto;
   max-width: 100%;
@@ -1733,10 +1737,11 @@
 		position: relative;
 		display: inline-block;
 		border-radius: 0.35em;
-		color: #fff !important;
+		color: #000 !important;
+		font-weight: bolder;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
-		background-color: #8ebebc;
+		background-color:  #002080;
 		border: 0;
 		cursor: pointer;
 		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
@@ -1747,6 +1752,8 @@
 		-webkit-transition: background-color 0.35s ease-in-out;
 		-ms-transition: background-color 0.35s ease-in-out;
 		transition: background-color 0.35s ease-in-out;
+		background-color: gray;
+		background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
 	}
 
 		input[type="button"]:hover,
@@ -1754,7 +1761,7 @@
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #9ececc;
+			background-color: #002db3;
 		}
 
 		input[type="button"]:active,
@@ -1762,7 +1769,7 @@
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background-color: #7eaeac;
+			background-color:  #002080;
 		}
 
 /* Item */
@@ -1820,8 +1827,8 @@
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-    background: #222629 url("images/overlay.png");
-    background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    /* background: #222629 url("images/overlay.png"); */
+
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
 		color: #fff;
 		height: 100%;
@@ -1830,8 +1837,8 @@
 		position: fixed;
 		text-align: right;
 		top: 0;
-    width: 375px;
-    z-index: 0;
+		width: 375px;
+
 	}
 
 		#header .top {
@@ -1855,14 +1862,15 @@
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
 			padding: 1.5em 0 0.75em 0;
-		  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
-  z-index:1;
+			background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+			z-index:1;
+		
+			-moz-animation:move-twink-back 200s linear infinite;
+			-ms-animation:move-twink-back 200s linear infinite;
+			-o-animation:move-twink-back 200s linear infinite;
+			-webkit-animation:move-twink-back 200s linear infinite;
+			animation:move-twink-back 200s linear infinite;
 
-  -moz-animation:move-twink-back 200s linear infinite;
-  -ms-animation:move-twink-back 200s linear infinite;
-  -o-animation:move-twink-back 200s linear infinite;
-  -webkit-animation:move-twink-back 200s linear infinite;
-  animation:move-twink-back 200s linear infinite;
 }
 
 			#header .bottom > :last-child {
@@ -2039,11 +2047,18 @@
 			}
 
 			#main > section.one {
-				background-image: url("../../images/banner.jpg");
+
+				background: url(../../images/hobs.png) no-repeat center bottom	; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
 			}
 
 			#main > section.two {
-				background-color: #f5fafa;
+				background: transparent;
+				background: url(../../images/blueblue.png) repeat center bottom	; 
+
 			}
 
 			#main > section.three {
