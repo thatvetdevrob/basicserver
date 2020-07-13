@@ -25,6 +25,15 @@
 
     #main {
       margin-left: 300px;
+background: transparent;
+background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+z-index:1;
+			
+-moz-animation:move-twink-back 200s linear infinite;
+-ms-animation:move-twink-back 200s linear infinite;
+-o-animation:move-twink-back 200s linear infinite;
+-webkit-animation:move-twink-back 200s linear infinite;
+animation:move-twink-back 200s linear infinite;
     }
 
 }
@@ -290,6 +299,14 @@
       transition: transform 0.5s ease;
       padding-bottom: 1px;
       margin-left: 0;
+      background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+				z-index:1;
+			
+				-moz-animation:move-twink-back 200s linear infinite;
+				-ms-animation:move-twink-back 200s linear infinite;
+				-o-animation:move-twink-back 200s linear infinite;
+				-webkit-animation:move-twink-back 200s linear infinite;
+				animation:move-twink-back 200s linear infinite;
     }
 
       #main > section {
@@ -330,6 +347,17 @@
     }
 
   /* Main */
+
+#main{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
 
     #main > section {
       padding: 2em 0;
